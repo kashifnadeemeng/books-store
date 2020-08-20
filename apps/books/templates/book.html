@@ -1,0 +1,23 @@
+<div class="divb1">
+    <div class="divb2">
+        <!-- Todo -->
+        <a href="#">
+            <img class="imgb" src="{{ book.cover_image.url }}" alt="{{ book.title }}">
+        </a>
+    </div>
+    <div class="divb3">
+        <p class="pb">{{ book.title }} By: {{ book.author }}</p>
+        {% if book.discount_price %}
+        <p class="pb">
+            <del>Rs: {{ book.price }}</del>
+            Rs: {{ book.discount_price }}
+        </p>
+        {% else %}
+        <p class="pb">Rs: {{ book.discount_price }}</p>
+        {% endif %}
+        <!-- Todo -->
+        <a href="#">
+            <button class="buttonb">Add to Cart</button>
+        </a>
+    </div>
+</div>

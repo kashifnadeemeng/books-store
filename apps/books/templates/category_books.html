@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endblock style%}
+{% block content %}
+<h1>{{ category.title }}:</h1>
+{% for book in category.books.all %}
+    {% include 'book.html' %}
+{% endfor %}
+<hr>
+{% endblock content %}
