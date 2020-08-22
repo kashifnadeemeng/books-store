@@ -1,4 +1,4 @@
-.divb1{
+.div_book_1 {
     background-color: rgb(240, 240, 240);
     width: 20%;
     float: left;
@@ -6,25 +6,25 @@
     padding: 20px;
     margin: 17px;
 }
-.divb2{
+.div_book_2 {
     width: 100%;
     height:240px;
 }
-.imgb{
+.img_book {
     width: 100%;
     height: 100%;
 }
-.divb3{
-   text-align: center;
-    width:100%;
+.div_book_3 {
+    text-align: center;
+    width: 100%;
     height: 50px;
 }
-.pb{
+.p_book {
     margin: 3px 0px;
 }
-.buttonb{
+.button_book {
     padding: 3px;
 }
-hr{
+hr {
     clear: both;
 }
