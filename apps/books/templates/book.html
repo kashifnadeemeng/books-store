@@ -1,0 +1,23 @@
+<div class="div_book_1">
+    <div class="div_book_2">
+        <!-- Todo: Add url to link here. -->
+        <a href="#">
+            <img class="img_book" src="{{ book.cover_image.url }}" alt="{{ book.title }}">
+        </a>
+    </div>
+    <div class="div_book_3">
+        <p class="p_book">{{ book.title }} By: {{ book.author }}</p>
+        {% if book.discount_price %}
+        <p class="p_book">
+            <del>Rs: {{ book.price }}</del>
+            Rs: {{ book.discount_price }}
+        </p>
+        {% else %}
+        <p class="p_book">Rs: {{ book.discount_price }}</p>
+        {% endif %}
+        <!-- Todo: Add url to link here. -->
+        <a href="#">
+            <button class="button_book">Add to Cart</button>
+        </a>
+    </div>
+</div>

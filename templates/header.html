@@ -1,0 +1,17 @@
+<ul class="ul">
+    <!-- Todo: Add url to link here. -->
+    <li class="li"><a href="#">BOOK|STORE</a></li>
+    <!-- Todo: Add url to link here. -->
+    <li class="li"><a href="#">HOME</a></li>
+    <li class="dropdown li">
+        <!-- Todo: Add url to link here. -->
+        <a href="#" class="dropbtn">CATEGORIES</a>
+        <div class="dropdown-content">
+            {% for c in category_list %}
+                <a href="{{ c.get_absolute_url }}">{{ c.title }}</a>
+            {% endfor %}
+        </div>
+    </li>
+    <!-- Todo: Add url to link here. -->
+    <li class="li"><a href="#">CART</a></li>
+</ul>
